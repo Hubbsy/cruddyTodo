@@ -1,0 +1,19 @@
+{
+  "name": "mytodo",
+  "version": "1.0.0",
+  "description": "practicing crud ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hubbsy/cruddyTodo.git"
+  },
+  "author": "me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hubbsy/cruddyTodo/issues"
+  },
+  "homepage": "https://github.com/Hubbsy/cruddyTodo#readme"
+}

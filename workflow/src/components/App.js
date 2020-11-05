@@ -3,7 +3,7 @@ import React from 'react';
 import '../App.css';
 import { Container, Row} from 'reactstrap';
 
-import View from './Views.jsx'
+import Views from './Views.jsx'
 import InputFields from './InputFields.jsx'
 
 class App extends React.Component {
@@ -11,26 +11,33 @@ class App extends React.Component {
     super() 
 
     this.state = {
-      name: '',
-      task: '',
-      priority: '',
-      complete: false,
       list: []
     }
+
+    this.addTodo = this.addTodo.bind(this);
   }
 
   componentDidMount() {
-    
+
   }
+
+  addTodo(item) {
+    const newTodo = this.state.list.concat(item);
+    this.setState({
+      list: newTodo
+    })
+  }
+
+
   
   render() {
     return (
       <Container>
         <Row>
-          <View/>
+          <Views tasks={this.state.list}/>
         </Row>
         <Row>
-          <InputFields/>
+          <InputFields addTodo={this.addTodo}/>
         </Row>
       </Container>
     )

@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Hubbsy/cruddyTodo/issues"
   },
-  "homepage": "https://github.com/Hubbsy/cruddyTodo#readme"
+  "homepage": "https://github.com/Hubbsy/cruddyTodo#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "reactstrap": "^8.7.1"
+  }
 }

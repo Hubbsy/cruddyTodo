@@ -4,11 +4,14 @@ import {Col} from 'reactstrap'
 
 
 
-const EachItem = () => {
+const EachItem = (props) => {
+  console.log(props)
   return (
     <>
     <Col>
-      <div>I need to do this</div>
+    
+      <div>{props.task.task}</div>
+  
     </Col>
 </>
   );

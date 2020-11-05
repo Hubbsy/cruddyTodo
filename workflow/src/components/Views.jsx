@@ -7,10 +7,15 @@ import EachItem from './EachItem.jsx';
 
 
 
-const Views = () => {
+const Views = (props) => {
+  console.log(props)
   return (
     <Row>
-      <EachItem />
+        {props.tasks.map(task => {
+          return (
+            <EachItem task={task} />
+          ) 
+        })}
     </Row>
   )
 };
